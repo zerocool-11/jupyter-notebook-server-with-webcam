@@ -14,6 +14,8 @@ list of some main libraries that are installed specially for machine learning an
 
 
 how to use it:
+
+
 just download my repo in your system and run:
 docker-compose up -d
 it will setup the continer for you 
