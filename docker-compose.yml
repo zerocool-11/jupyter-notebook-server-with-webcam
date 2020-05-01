@@ -1,0 +1,8 @@
+conda:
+   image: zerocool11/anaconda_full:latest
+   volumes:
+         - jupt:/opt/notebook
+   ports:
+         -  4444:8888
+   restart: always
+   command: bash -c "jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root"
