@@ -2,15 +2,15 @@
 
 it have some python modules which are mainly required are preinstalled and jupyter is also preconfigured
 docker image link:
-https://hub.docker.com/r/zerocool11/anaconda_full
+ https://hub.docker.com/r/zerocool11/anaconda_full
 
 list of some main libraries that are installed specially for machine learning and neural network:
-keras
-plotly
-sklearn
-opencv
-pandas
-numpy
+ keras
+,plotly
+,sklearn
+,opencv
+,pandas
+,numpy
 
 
 how to use it:
