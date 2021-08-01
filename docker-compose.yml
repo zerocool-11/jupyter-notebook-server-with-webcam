@@ -1,8 +1,21 @@
-conda:
-   image: zerocool11/anaconda_full:latest
+optisol_jupt:
+   image: optisol:v2
+   environment:
+      - DISPLAY=unix:0.0
+      - TERM=xterm
+
    volumes:
-         - jupt:/opt/notebook
+      - /home/pluto:/home/
+      - /home/user/.Xauthority:/root/.Xauthority
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /dev/video0:/dev/video0
+      - /dev/video1:/dev/video1
+      
    ports:
-         -  4444:8888
+      -  4444:8888
+   devices:
+      - /dev/video0:/dev/video0
+      - /dev/video1:/dev/video1
    restart: always
-   command: bash -c "jupyter notebook --notebook-dir=/opt/notebook --ip='*' --port=8888 --no-browser --allow-root"
+   command: bash -c "jupyter notebook --notebook-dir=/home/ --ip='*' --port=8888 --no-browser --allow-root"
+ 
