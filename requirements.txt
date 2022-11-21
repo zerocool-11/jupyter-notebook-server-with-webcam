@@ -10,7 +10,7 @@ pandas
 matplotlib
 scikit-learn
 seaborn
-tensorflow==2.4.0
+tensorflow==2.9.3
 torch
 torchvision
 cryptography
